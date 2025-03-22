@@ -1,6 +1,8 @@
 # xAI API Proxy
 
-这个 Cloudflare Worker 作为 xAI API 的代理，特别处理图像生成请求，仅保留文档中支持的参数。
+[English](README-en.md) | [中文](README.md)
+
+这个 Cloudflare Worker 作为 xAI API 的代理，特别处理图像生成请求，仅保留文档中支持的参数。在使用例如Open-WebUI这类客户端时，必须填写图像分辨率，从而会导致失败请求提示`The size parameter is not supported at the moment. Leave it empty.`。本项目通过过滤不支持的参数，从而避免此类问题。
 
 ## 功能
 
