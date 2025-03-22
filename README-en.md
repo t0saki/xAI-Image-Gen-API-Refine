@@ -2,7 +2,7 @@
 
 [English](README-en.md) | [中文](README.md)
 
-This Cloudflare Worker serves as a proxy for the xAI API, specifically handling image generation requests and preserving only the parameters supported in the documentation. When using clients like Open-WebUI, you must fill in the image resolution, which will cause failed requests to prompt `The size parameter is not supported at the moment. Leave it empty.` This project filters out unsupported parameters to avoid this issue.
+This Cloudflare Worker serves as a proxy for the xAI API, specifically handling image generation requests and preserving only the parameters supported in the documentation. When clients like Open-WebUI use the grok-2-image model, you must fill in the image resolution, which will cause failed requests to prompt `The size parameter is not supported at the moment. Leave it empty.` This project filters out unsupported parameters to avoid this issue.
 
 ## Features
 
